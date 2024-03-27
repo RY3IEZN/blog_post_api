@@ -6,6 +6,8 @@ app = FastAPI()
 
 Base.metadata.create_all(bind=engine)
 
+print("hello")
+
 
 @app.get("/home")
 async def home():
